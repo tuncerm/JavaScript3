@@ -4,7 +4,7 @@ myReq.onerror = function(e) {
   console.error('The request failed due to an connection error.', e);
 };
 myReq.onload = function() {
-  if (this.status.toString().startsWith('2')) {
+  if (this.status >= 200 && this.status <= 299) {
     document.getElementById('xhr').setAttribute('src', this.responseURL);
   } else {
     console.error('Request failed: ', this.status);

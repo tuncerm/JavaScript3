@@ -60,7 +60,9 @@
         });
         return;
       }
-      repos.forEach(repo => renderRepoDetails(repo, root));
+      repos
+        .sort((a, b) => (a.name > b.name ? 1 : -1))
+        .forEach(repo => renderRepoDetails(repo, root));
     });
   }
 
