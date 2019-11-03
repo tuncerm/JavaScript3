@@ -61,7 +61,7 @@
         return;
       }
       repos
-        .sort((a, b) => (a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1))
+        .sort((a, b) => a.name.localeCompare(b.name))
         .forEach(repo => renderRepoDetails(repo, root));
     });
   }
