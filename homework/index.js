@@ -22,7 +22,12 @@
 
   function fetchJSON(url, cb, filter, sort) {
     fetch(url)
-      .then(data => data.json())
+      .then(data => {
+        if (data.status > 199 && data.status < 300) {
+          return data.json();
+        }
+        throw new Error(data.status);
+      })
       .then(data =>
         data.map(item => {
           const newItem = {};
