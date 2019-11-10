@@ -76,7 +76,7 @@
     createAndAppend('td', rDesc, { text: repo.description });
     const rForks = createAndAppend('tr', table);
     createAndAppend('td', rForks, { text: 'Forks:', class: 'bold center' });
-    createAndAppend('td', rForks, { text: repo.description });
+    createAndAppend('td', rForks, { text: repo.forks });
     const rUpdated = createAndAppend('tr', table);
     createAndAppend('td', rUpdated, { text: 'Updated:', class: 'bold center' });
     createAndAppend('td', rUpdated, {
