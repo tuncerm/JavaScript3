@@ -1,3 +1,111 @@
 .alert-error {
   color: red;
+  width: 100%;
+  border: 1px solid rgba(255, 0, 0, 0.5);
+  background-color: rgba(255, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 15px;
+  color: white;
+  height: 50px;
+}
+
+body {
+  background-color: rgba(200, 200, 200, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  padding-top: 40px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: blue;
+  height: 100px;
+  color: white;
+  line-height: 20px;
+  font-size: 20px;
+  padding: 40px 20px;
+  display: flex;
+}
+
+.repo-select {
+  width: 200px;
+  margin-left: 20px;
+}
+.main-container {
+  width: 100%;
+  padding: 1px;
+}
+.main-content {
+  float: left;
+  margin: 5px;
+  width: calc(50% - 10px);
+  box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.4);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.center {
+  text-align: center;
+}
+
+.content-item {
+  padding: 12px;
+  height: 84px;
+  border-bottom: 1px solid gray;
+}
+.avatar {
+  width: 60px;
+  margin-right: 12px;
+  border-radius: 3px;
+}
+.text {
+  line-height: 60px;
+}
+.c-text {
+  margin: 15px 0 0 15px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.medal {
+  background-color: gray;
+  line-height: 20px;
+  margin-top: 20px;
+  padding: 3px 10px;
+  border-radius: 3px;
+  color: white;
+}
+table {
+  margin: 15px;
+}
+td {
+  padding: 0 2px;
+}
+
+@media screen and (max-width: 700px) {
+  .main-content {
+    width: calc(100% - 10px);
+  }
+  #root {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 850px) {
+  #root {
+    width: 95%;
+  }
 }
